@@ -1,8 +1,5 @@
-const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
-
+const images = ["0.jpg", "1.jpg", "2.jpg"];
 const chosenImg = images[Math.round(Math.random() * (images.length - 1))];
-
 const bgImage = document.createElement("img");
-bgImage.src = `img/${chosenImg}`;
 
-document.body.appendChild(bgImage);
+document.body.style.backgroundImage = `url('img/${chosenImg}')`;
